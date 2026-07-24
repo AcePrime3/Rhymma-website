@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { Link } from "wouter";
 import { motion } from "framer-motion";
-import { ArrowRight, CheckCircle2, Mail, LifeBuoy, Bug, MessageSquare, Clock } from "lucide-react";
+import { ArrowRight, CheckCircle2, Mail, LifeBuoy, Bug } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
@@ -20,22 +20,10 @@ const reasons = [
 
 const channels = [
   {
-    icon: LifeBuoy,
-    label: "Support",
-    value: "support@rhymma.com",
-    note: "Issues, problems & defects",
-  },
-  {
-    icon: MessageSquare,
-    label: "Sales",
-    value: "sales@rhymma.com",
-    note: "Demos & fleet questions",
-  },
-  {
     icon: Mail,
     label: "General",
-    value: "hello@rhymma.com",
-    note: "Press, partnerships & praise",
+    value: "info@rhymma.com",
+    note: "For everything from questions to partnerships and support",
   },
 ];
 
@@ -87,8 +75,8 @@ export default function Contact() {
                     Message sent
                   </h2>
                   <p className="text-muted-foreground max-w-md mb-8">
-                    Thanks for reaching out about "{reason.toLowerCase()}". Our team typically replies
-                    within one business day.
+                    Thanks for reaching out about "{reason.toLowerCase()}". Our team will get back to
+                    you as soon as possible.
                   </p>
                   <Button
                     onClick={() => setSubmitted(false)}
@@ -189,19 +177,6 @@ export default function Contact() {
                   </div>
                 );
               })}
-
-              <div className="bg-white/[0.02] border border-white/5 rounded-2xl p-6 flex items-start gap-4">
-                <div className="w-11 h-11 rounded-xl bg-white/5 border border-white/10 flex items-center justify-center shrink-0">
-                  <Clock className="w-5 h-5 brand-gradient-text" />
-                </div>
-                <div>
-                  <div className="font-mono text-[10px] uppercase tracking-widest text-muted-foreground mb-1">
-                    Response time
-                  </div>
-                  <p className="text-white font-medium">Within 1 business day</p>
-                  <p className="text-xs text-muted-foreground mt-1">Mon–Fri, from a real human.</p>
-                </div>
-              </div>
 
               <div className="bg-white/[0.02] border border-white/5 rounded-2xl p-6 flex items-start gap-4">
                 <div className="w-11 h-11 rounded-xl bg-white/5 border border-white/10 flex items-center justify-center shrink-0">

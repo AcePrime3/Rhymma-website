@@ -6,9 +6,13 @@ import { TooltipProvider } from "@/components/ui/tooltip";
 import NotFound from "@/pages/not-found";
 import Home from "@/pages/Home";
 import GetStarted from "@/pages/GetStarted";
+import Solutions from "@/pages/Solutions";
 import SignIn from "@/pages/SignIn";
 import Contact from "@/pages/Contact";
 import Company from "@/pages/Company";
+import AboutUs from "@/pages/AboutUs";
+import PrivacyPolicy from "@/pages/PrivacyPolicy";
+import TermsOfService from "@/pages/TermsOfService";
 // Temporarily removed from navigation. Pages kept for when we bring them back:
 // import Pricing from "@/pages/Pricing";
 // import Resources from "@/pages/Resources";
@@ -29,9 +33,13 @@ function Router() {
     <Switch>
       <Route path="/" component={Home} />
       <Route path="/get-started" component={GetStarted} />
+      <Route path="/solutions" component={Solutions} />
       <Route path="/signin" component={SignIn} />
       <Route path="/signin/:segment" component={SignIn} />
       <Route path="/company" component={Company} />
+      <Route path="/about-us" component={AboutUs} />
+      <Route path="/privacy-policy" component={PrivacyPolicy} />
+      <Route path="/terms-of-service" component={TermsOfService} />
       {/* Temporarily removed from navigation. Restore these when ready:
       <Route path="/pricing" component={Pricing} />
       <Route path="/resources" component={Resources} />

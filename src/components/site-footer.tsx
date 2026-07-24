@@ -8,11 +8,10 @@ const solutions = [
 ];
 
 const company = [
-  { label: "About Us", href: "/company" },
+  { label: "About Us", href: "/about-us" },
   { label: "Contact", href: "/contact" },
-  { label: "Careers", href: "/company" },
-  { label: "Privacy Policy", href: "#" },
-  { label: "Terms of Service", href: "#" },
+  { label: "Privacy Policy", href: "/privacy-policy" },
+  { label: "Terms of Service", href: "/terms-of-service" },
 ];
 
 export default function SiteFooter() {
@@ -51,21 +50,13 @@ export default function SiteFooter() {
           <div>
             <h4 className="font-mono text-xs uppercase tracking-widest text-white mb-6">Company</h4>
             <ul className="space-y-4">
-              {company.map((item) =>
-                item.href === "#" ? (
-                  <li key={item.label}>
-                    <a href="#" className="text-muted-foreground hover:text-white text-sm transition-colors">
-                      {item.label}
-                    </a>
-                  </li>
-                ) : (
-                  <li key={item.label}>
-                    <Link href={item.href} className="text-muted-foreground hover:text-white text-sm transition-colors">
-                      {item.label}
-                    </Link>
-                  </li>
-                ),
-              )}
+              {company.map((item) => (
+                <li key={item.label}>
+                  <Link href={item.href} className="text-muted-foreground hover:text-white text-sm transition-colors">
+                    {item.label}
+                  </Link>
+                </li>
+              ))}
             </ul>
           </div>
         </div>

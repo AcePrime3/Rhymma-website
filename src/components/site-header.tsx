@@ -5,8 +5,8 @@ import { Button } from "@/components/ui/button";
 import rhymmaLogo from "@assets/logo.svg";
 
 const navItems = [
-  { label: "Solutions", href: "/get-started" },
-  { label: "About Us", href: "/company" },
+  { label: "Solutions", href: "/solutions" },
+  { label: "About Us", href: "/about-us" },
 ];
 
 export default function SiteHeader() {
