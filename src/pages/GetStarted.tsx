@@ -1,6 +1,6 @@
 import { Link } from "wouter";
 import { motion } from "framer-motion";
-import { ArrowRight, Check, ShieldCheck } from "lucide-react";
+import { ArrowRight, Check } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import SiteHeader from "@/components/site-header";
 import SiteFooter from "@/components/site-footer";
@@ -102,10 +102,6 @@ export default function GetStarted() {
             })}
           </div>
 
-          <div className="flex items-center justify-center gap-2 mt-12 text-xs text-muted-foreground font-mono">
-            <ShieldCheck className="w-4 h-4" />
-            Enterprise-grade security.
-          </div>
         </div>
       </section>
 
