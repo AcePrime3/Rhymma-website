@@ -10,8 +10,9 @@
   "scripts": {
     "dev": "vite --config vite.config.ts",
     "build": "vite build --config vite.config.ts",
-    "preview": "vite preview --config vite.config.ts",
-    "typecheck": "tsc -p tsconfig.json --noEmit"
+    "preview": "npm run build && wrangler dev",
+    "typecheck": "tsc -p tsconfig.json --noEmit",
+    "deploy": "npm run build && wrangler deploy"
   },
   "dependencies": {
     "@hookform/resolvers": "^3.10.0",
@@ -69,12 +70,14 @@
     "zod": "^3.24.1"
   },
   "devDependencies": {
+    "@cloudflare/vite-plugin": "^1.47.0",
     "@tailwindcss/vite": "^4.0.0",
     "@types/node": "^22.10.2",
     "@types/react": "^18.3.18",
     "@types/react-dom": "^18.3.5",
     "@vitejs/plugin-react": "^4.3.4",
     "typescript": "^5.7.2",
-    "vite": "^6.0.5"
+    "vite": "^6.0.5",
+    "wrangler": "^4.114.0"
   }
 }

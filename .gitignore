@@ -30,3 +30,9 @@ node_modules/.vite/
 
 # Replit artifact metadata (not needed outside Replit)
 .replit-artifact/
+
+# wrangler files
+.wrangler
+.dev.vars*
+!.dev.vars.example
+!.env.example
