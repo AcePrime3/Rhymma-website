@@ -7,7 +7,7 @@ import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
 import { Tabs, TabsList, TabsTrigger, TabsContent } from "@/components/ui/tabs";
-import rhymmaLogo from "@assets/Rhymma_logo_orange_Gradiant_1776087102147.png";
+import rhymmaLogo from "@assets/logo.svg";
 import { isSegmentId, segments, segmentList, type SegmentId } from "@/lib/segments";
 
 interface SignInProps {

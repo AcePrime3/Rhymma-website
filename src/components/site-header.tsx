@@ -2,7 +2,7 @@ import { useState } from "react";
 import { Link } from "wouter";
 import { Menu, X } from "lucide-react";
 import { Button } from "@/components/ui/button";
-import rhymmaLogo from "@assets/Rhymma_logo_orange_Gradiant_1776087102147.png";
+import rhymmaLogo from "@assets/logo.svg";
 
 const navItems = [
   { label: "Solutions", href: "/solutions" },

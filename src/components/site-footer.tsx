@@ -1,5 +1,5 @@
 import { Link } from "wouter";
-import rhymmaTaglineImg from "@assets/Gradiant_logo_with_white_tagline_1776087327544.png";
+import rhymmaTaglineImg from "@assets/logo-tagline-white.svg";
 
 const solutions = [
   { label: "For Drivers", href: "/signin/driver" },
