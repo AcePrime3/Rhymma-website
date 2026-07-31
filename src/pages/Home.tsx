@@ -3,7 +3,7 @@ import { motion, useScroll, useTransform, AnimatePresence } from "framer-motion"
 import { Link } from "wouter";
 import { Button } from "@/components/ui/button";
 import { ArrowRight, Map, Activity, Zap, Play, Terminal, Database, Cable, ChevronRight } from "lucide-react";
-import rhymmaIcon from "@assets/icon.svg";
+import rhymmaIcon from "@assets/icon_Gradiant_orange_1776087317531.png";
 import SiteHeader from "@/components/site-header";
 import SiteFooter from "@/components/site-footer";
 
